@@ -56,7 +56,7 @@ def puzzle2(input):
                 elif (passport[key][-2:] == "in"): 
                     if (int(passport[key][0:-2]) >= 59 and int(passport[key][0:-2]) <= 76): correct += 1
             elif (key == "hcl"): 
-                if (passport[key][0])
+                if (passport[key][0] == '#' and len(passport[key][0]) == 6)
 
     
     return correct 

@@ -42,9 +42,8 @@ def part1(input):
 def part2(input): 
    
     sum = 0 
-    for index, game in enumerate(input): 
+    for game in input: 
         colors = {'red': 0, 'green': 0, 'blue': 0}
-        too_large = False 
         for draw in game: 
             for key in colors: 
                 if draw[key] > colors[key]: 
