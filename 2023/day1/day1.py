@@ -1,6 +1,5 @@
 import time 
 
-
 def get_input(): 
     with open('./2023/day1/input.txt') as f: 
         lines = f.readlines() 
@@ -23,24 +22,23 @@ def check_number_strings(line):
             return(str(i+1))
     return -1
 
+def first_number(line):
+    string_number = ''
+    for c in line: 
+        if(c.isnumeric()): 
+            return c 
+        else: 
+            string_number += c 
+            result = check_number_strings(c)
+            if (result != -1): 
+                return result
+
 def part2(input): 
     sum = 0 
     for line in input: 
-        first_last = []
-        lines = [line, line[::-1]]
-        for l in lines: 
-            string_number = ''
-            for c in l: 
-                if(c.isnumeric()): 
-                    first_last.append(c)
-                    break 
-                else: 
-                    string_number += c 
-                    result = check_number_strings(string_number)
-                    if (result != -1): 
-                        first_last.append(result)
-                        break 
-        sum += int(first_last[0] + first_last[1])
+        first = first_number(line)
+        last = first_number(line[::-1])
+        sum += int(first + last)
     return sum
 
 def main(): 

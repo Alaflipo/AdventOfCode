@@ -35,8 +35,6 @@ def find_numbers(ver, hor, input):
     print(numbers)
     return numbers 
 
-
-
 def find_range(n, m, i, j): 
     left = (j - m - 1) if (j - m - 1) >= 0 else (j - m)
     up = (i - 1) if (i - 1) >= 0 else i
