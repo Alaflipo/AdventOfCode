@@ -32,7 +32,9 @@ def part2(input):
             if (password[i] > password[i+1]): 
                 increasing = False
                 break 
-            if (password[i] == password[i+1] and ((i + 2) >= len(password) or password[i] != password[i+2])):
+            if (password[i] == password[i+1] and 
+                ((i + 2) >= len(password) or password[i] != password[i+2]) and 
+                ((i-1) < 0 or password[i] != password[i-1])):
                 the_same = True 
         if (the_same and increasing): 
             count += 1

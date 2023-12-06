@@ -121,6 +121,7 @@ def process_as_ranges(input):
                 destination_end=map_range[0] + map_range[2] - 1, 
                 maprange=map_range[2]
             ))
+    #AHHHHHH dom dom dom dit vergeten... 
     category_maps.append(category_map.copy())
 
     # sort the maps by origin starting point 
