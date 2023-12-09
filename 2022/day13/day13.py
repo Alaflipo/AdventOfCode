@@ -1,8 +1,9 @@
 import time 
 
 def get_input(): 
-    with open('./2023/day13/input.txt') as f: 
-        lines = f.readlines() 
+    with open('./2022/day13/input.txt') as f: 
+        lines = f.read()
+        packlines.split['\n\n']
         return lines
     
 def part1(input):
