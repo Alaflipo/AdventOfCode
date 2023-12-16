@@ -12,7 +12,7 @@ def get_input():
 
 combination_cache = {} 
 def find_combinations(hot_spring, groups, size_counter): 
-    # Caching!!! 
+    # Caching wooopp woooppp
     if (hot_spring, groups, size_counter) in combination_cache:
         return combination_cache[(hot_spring, groups, size_counter)] 
     
