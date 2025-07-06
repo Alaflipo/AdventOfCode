@@ -1,7 +1,7 @@
 import time 
 
 def get_input(): 
-    with open('./2024/day1/input.txt') as f: 
+    with open('./2024/dayx/input.txt') as f: 
         lines = f.readlines() 
         return lines
     
